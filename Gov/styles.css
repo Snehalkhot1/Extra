@@ -1,0 +1,73 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f7f9;
+    text-align: center;
+}
+
+.header {
+    background: #0c7c59;
+    color: white;
+    padding: 20px;
+}
+
+.menu {
+    margin: 25px;
+}
+
+.menu button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0c7c59;
+    color: white;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background: #095c44;
+}
+
+.hidden {
+    display: none;
+}
+
+.panel {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scheme-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.scheme-card h3 {
+    color: #0c7c59;
+    margin-top: 0;
+}
+
+.prices-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prices-table th {
+    background: #0c7c59;
+    color: white;
+    padding: 10px;
+}
+
+.prices-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

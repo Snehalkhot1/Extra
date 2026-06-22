@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Farmer AI Information Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="icons.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>🌾 Farmer Information Portal</h1>
+    </header>
+
+    <div class="menu">
+
+        <button onclick="showSchemes()">📜 Government Schemes</button>
+
+        <button onclick="showRates()">🌾 Crop Market Rates</button>
+
+    </div>
+
+    <main id="content">
+
+        <section id="schemesSection" class="panel hidden">
+
+            <h2>Government Schemes</h2>
+
+            <div id="schemesContainer"></div>
+
+        </section>
+
+
+        <section id="ratesSection" class="panel hidden">
+
+            <h2>Crop Market Rates</h2>
+
+            <table class="prices-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Crop</th>
+                        <th>Market</th>
+                        <th>Price ₹</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="ratesContainer"></tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
