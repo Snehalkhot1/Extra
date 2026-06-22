@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Analyzer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <h1>Skill Gap Analyzer</h1>
+
+        <div class="glass-box">
+
+            <label>Select Current Skill</label>
+
+            <select id="skill">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+      </select>
+
+            <label>Select Career Goal</label>
+
+            <select id="goal">
+        <option>Frontend Developer</option>
+        <option>Full Stack Developer</option>
+      </select>
+
+            <button onclick="analyzeSkills()">Analyze Skills</button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div>
+            <h2>Employee AI</h2>
+        </div>
+
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-brain"></i> Skill Analysis</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i> Wellness</a></li>
+            <li><a href="#"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
+            <li><a href="#"><i class="fa-solid fa-award"></i> Achievements</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <div class="topbar">
+
+            <h1>Welcome Back Snehal 👋</h1>
+
+            <div class="profile-card">
+                <img src="https://i.pravatar.cc/100" alt="profile">
+
+                <div>
+                    <h3>Frontend Developer</h3>
+                    <p>AI Growth Score: 89%</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card blue">
+                <i class="fa-solid fa-chart-column"></i>
+                <h2>85%</h2>
+                <p>Productivity</p>
+            </div>
+
+            <div class="stat-card green">
+                <i class="fa-solid fa-heart"></i>
+                <h2>78%</h2>
+                <p>Wellness</p>
+            </div>
+
+            <div class="stat-card purple">
+                <i class="fa-solid fa-book"></i>
+                <h2>65%</h2>
+                <p>Learning</p>
+            </div>
+
+            <div class="stat-card red">
+                <i class="fa-solid fa-fire"></i>
+                <h2>Low</h2>
+                <p>Burnout Risk</p>
+            </div>
+
+        </div>
+
+        <div class="dashboard-grid">
+
+            <div class="glass-card">
+
+                <h2>AI Recommendations</h2>
+
+                <div class="recommendation">
+                    <p>✅ Learn React.js to improve promotion opportunities.</p>
+                </div>
+
+                <div class="recommendation">
+                    <p>☕ Take a 15 minute wellness break.</p>
+                </div>
+
+                <div class="recommendation">
+                    <p>🚀 Your productivity increased by 12% this week.</p>
+                </div>
+
+            </div>
+
+            <div class="glass-card">
+
+                <h2>Daily Mood Tracker</h2>
+
+                <select id="mood">
+        <option>😊 Happy</option>
+        <option>😐 Neutral</option>
+        <option>😔 Stressed</option>
+      </select>
+
+                <button onclick="checkMood()">Analyze Mood</button>
+
+                <div id="moodResult"></div>
+
+            </div>
+
+        </div>
+
+        <div class="chart-section">
+
+            <div class="chart-card">
+                <h2>Weekly Productivity</h2>
+                <canvas id="chart"></canvas>
+            </div>
+
+            <div class="chart-card">
+
+                <h2>Skill Progress</h2>
+
+                <div class="progress-box">
+                    <p>HTML</p>
+                    <div class="progress">
+                        <span style="width:95%"></span>
+                    </div>
+                </div>
+
+                <div class="progress-box">
+                    <p>CSS</p>
+                    <div class="progress">
+                        <span style="width:90%"></span>
+                    </div>
+                </div>
+
+                <div class="progress-box">
+                    <p>JavaScript</p>
+                    <div class="progress">
+                        <span style="width:80%"></span>
+                    </div>
+                </div>
+
+                <div class="progress-box">
+                    <p>React.js</p>
+                    <div class="progress">
+                        <span style="width:65%"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="achievement-section">
+
+            <div class="achievement-card">
+                🏆 Fast Learner
+            </div>
+
+            <div class="achievement-card">
+                🔥 Productivity Master
+            </div>
+
+            <div class="achievement-card">
+                ⭐ Team Contributor
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

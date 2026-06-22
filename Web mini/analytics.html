@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <h1>Performance Analytics</h1>
+
+        <div class="chart-box">
+            <canvas id="myChart"></canvas>
+        </div>
+
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+                datasets: [{
+                    label: 'Performance',
+                    data: [70, 85, 78, 90, 88],
+                    borderColor: '#00ffff',
+                    tension: 0.4,
+                    fill: true
+                }]
+            }
+        });
+    </script>
+
+</body>
+
+</html>
